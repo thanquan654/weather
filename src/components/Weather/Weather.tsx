@@ -40,7 +40,7 @@ const Weather: React.FC<Props> = (props) => {
     let imgSrc: string|undefined = ""
     const weatherStatus: string[] = [ "clear", "cloud", "mist", "rain", "snow"]
     weatherStatus.forEach((status: string) => {
-      if (mess?.includes(status)) imgSrc=`${status}.png`
+      if (mess?.includes(status)) imgSrc=`./${status}.png`
     }) 
 
     
@@ -105,7 +105,7 @@ const Weather: React.FC<Props> = (props) => {
       <>
       {loading && <Loading />}
       <div className={styles.weatherSection}>
-          <img className={styles.img} src='./public/404.png'></img>
+          <img className={styles.img} src='./404.png'></img>
           <span className={styles.errMessage}>No matching location found!</span>
       </div>
       </>

@@ -35,7 +35,7 @@ const App: React.FC = () => {
   // Function
   const getWeatherData: (city: string) => void = async (city) => {
     setLoading(true)
-    await axios.get(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=yes`)    
+    await axios.get(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=yes`)    
       .then((res)=> {
         setWeatherData(res.data)
       })
