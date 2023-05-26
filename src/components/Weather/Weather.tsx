@@ -40,7 +40,7 @@ const Weather: React.FC<Props> = (props) => {
     let imgSrc: string|undefined = ""
     const weatherStatus: string[] = [ "clear", "cloud", "mist", "rain", "snow"]
     weatherStatus.forEach((status: string) => {
-      if (mess?.includes(status)) imgSrc=`${status}.png`
+      if (mess?.includes(status)) imgSrc=`./${status}.png`
     }) 
 
     
