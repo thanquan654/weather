@@ -1,0 +1,39 @@
+.inputSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .icon{
+        font-size: 30px;
+    }
+    .input{
+        padding: 0 5px;
+        border: none;
+        border-bottom: 1px solid transparent;
+        font-size: 17px;
+        font-weight: 500;
+
+        
+        &:hover {
+            border-bottom: 1px solid #cccccc;
+        }
+        &:focus {
+            border-bottom: 1px solid #cccccc;
+        }
+        
+    }
+    .searchBtn{
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #DFF3FF;
+        font-size: 1.2rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #0C2B41;
+            color: #fff;
+        }
+    }
+
+}
