@@ -105,7 +105,7 @@ const Weather: React.FC<Props> = (props) => {
       <>
       {loading && <Loading />}
       <div className={styles.weatherSection}>
-          <img className={styles.img} src='./public/404.png'></img>
+          <img className={styles.img} src='./404.png'></img>
           <span className={styles.errMessage}>No matching location found!</span>
       </div>
       </>
