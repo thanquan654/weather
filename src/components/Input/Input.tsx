@@ -21,8 +21,8 @@ const Input: React.FC<Props> = (props) => {
 
     return (
     <div className={styles.inputSection}>
-        <div className={styles.icon}>
-            <IoLocationSharp />
+        <div >
+            <IoLocationSharp className={styles.icon}/>
         </div>
         <input
             className={styles.input}
